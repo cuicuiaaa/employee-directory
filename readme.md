@@ -6,6 +6,8 @@
 
 Managers can use the app to view employee information. They can also use the sorting feature and the search feature to narrow their results.
 
+![employee-directory](https://user-images.githubusercontent.com/59434943/86527674-c0853e00-bee4-11ea-99bf-9c9843bb37d9.gif)
+
 ### Table of Contents
 
 * [Installation](#installation "Installation")
