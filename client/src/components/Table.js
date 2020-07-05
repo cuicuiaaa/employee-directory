@@ -12,9 +12,9 @@ function Table(props) {
         <table class="table">
             <thead>
                 <tr>
-                <th scope="col">#</th>
+                <th scope="col" onClick={props.handleIdSorting}># &#9650;</th>
                 <th scope="col">First</th>
-                <th scope="col">Last</th>
+                <th scope="col" onClick={props.handleLastnameSorting}>Last &#9650;</th>
                 <th scope="col">Email</th>
                 <th scope="col">Gender</th>
                 </tr>

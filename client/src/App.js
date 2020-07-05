@@ -135,13 +135,34 @@ export class App extends Component {
     this.setState({search: search});
   }
 
+  handleIdSorting = () => {
+    const array = this.state.data.sort(function(a, b) {
+      return a.id - b.id
+    });
+
+    this.setState({data: array});
+  }
+
+  handleLastnameSorting = () => {
+    const array = this.state.data.sort(function(a, b) {
+      const nameA = a.last_name.toLowerCase(), nameB = b.last_name.toLowerCase()
+      if (nameA < nameB) //sort string ascending
+        return -1 
+      if (nameA > nameB)
+        return 1
+      return 0; 
+    });
+
+    this.setState({data: array});
+  }
+
 
   render() {
     return (
       <div className="App">
         <Header />
         <Search onChange={this.onChange}/>
-        <Table search={this.state.search} data={this.state.data}/>
+        <Table search={this.state.search} data={this.state.data} handleIdSorting={this.handleIdSorting} handleLastnameSorting={this.handleLastnameSorting}/>
       </div>
     )
   }
