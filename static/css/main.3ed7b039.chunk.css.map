@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAEA,eACI,iBAEJ,CAEA,YACI,yBAAkB,CAAlB,sBAAkB,CAAlB,iBAAkB,CAClB,WACJ,CAEA,OACI,gBACJ","file":"main.3ed7b039.chunk.css","sourcesContent":["\n\n.search-header {\n    text-align: center;\n\n}\n\n.search-box {\n    width: fit-content;\n    margin: auto;\n}\n\n.table {\n    margin: 30px 50px;\n}\n\n"]}
